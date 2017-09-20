@@ -12,7 +12,7 @@
 #import "QRCodeBackgroundView.h"
 #import "UIViewExt.h"
 #import "KNWebViewController.h"
-
+#import "KNLableViewController.h"
 
 
 #define kScreenWidth   [UIScreen mainScreen].bounds.size.width
@@ -125,11 +125,11 @@
         AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex:0];
         
         NSLog(@"扫码出来的内容  ---%@",metadataObject.stringValue);
-        KNWebViewController  *webView = [[KNWebViewController alloc]init];
-        webView.Url = metadataObject.stringValue;
+        KNLableViewController  *LableVC = [[KNLableViewController alloc]init];
+        LableVC.QRString = metadataObject.stringValue;
         //进入到webView 中显示
         _IsOpen = YES;
-        [self.navigationController pushViewController:webView animated:YES];
+        [self.navigationController pushViewController:LableVC animated:YES];
     }
 }
 

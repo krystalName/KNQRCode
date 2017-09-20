@@ -18,6 +18,7 @@
 		C246858E1F70C2B800E3E8E4 /* QRCodeBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C246858D1F70C2B800E3E8E4 /* QRCodeBackgroundView.m */; };
 		C24685911F70CA6100E3E8E4 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = C24685901F70CA6100E3E8E4 /* UIViewExt.m */; };
 		C24685941F70EBF800E3E8E4 /* KNWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C24685931F70EBF800E3E8E4 /* KNWebViewController.m */; };
+		C2F597791F723AF700C7712D /* KNLableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F597781F723AF700C7712D /* KNLableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		C24685901F70CA6100E3E8E4 /* UIViewExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		C24685921F70EBF800E3E8E4 /* KNWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNWebViewController.h; sourceTree = "<group>"; };
 		C24685931F70EBF800E3E8E4 /* KNWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNWebViewController.m; sourceTree = "<group>"; };
+		C2F597771F723AF700C7712D /* KNLableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNLableViewController.h; sourceTree = "<group>"; };
+		C2F597781F723AF700C7712D /* KNLableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNLableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				C24685731F70BD0800E3E8E4 /* ViewController.m */,
 				C24685921F70EBF800E3E8E4 /* KNWebViewController.h */,
 				C24685931F70EBF800E3E8E4 /* KNWebViewController.m */,
+				C2F597771F723AF700C7712D /* KNLableViewController.h */,
+				C2F597781F723AF700C7712D /* KNLableViewController.m */,
 				C24685751F70BD0800E3E8E4 /* Main.storyboard */,
 				C24685781F70BD0800E3E8E4 /* Assets.xcassets */,
 				C246857A1F70BD0800E3E8E4 /* LaunchScreen.storyboard */,
@@ -183,6 +188,7 @@
 				C24685711F70BD0800E3E8E4 /* AppDelegate.m in Sources */,
 				C24685941F70EBF800E3E8E4 /* KNWebViewController.m in Sources */,
 				C246858B1F70C27D00E3E8E4 /* QRCodeAnimationView.m in Sources */,
+				C2F597791F723AF700C7712D /* KNLableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
