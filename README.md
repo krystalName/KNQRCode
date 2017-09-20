@@ -4,7 +4,7 @@
 
 ### 用系统的api 打造的一个扫码小工具。 用于以后项目需求吧。 先上一张gif看下效果
 
-
+![](https://github.com/krystalName/KNQRCode/blob/master/KNQRCode.gif)
 
 ### 附加只要实现代码如下
 
