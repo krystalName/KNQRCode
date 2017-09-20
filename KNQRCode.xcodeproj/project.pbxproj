@@ -13,6 +13,11 @@
 		C24685791F70BD0800E3E8E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C24685781F70BD0800E3E8E4 /* Assets.xcassets */; };
 		C246857C1F70BD0800E3E8E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C246857A1F70BD0800E3E8E4 /* LaunchScreen.storyboard */; };
 		C246857F1F70BD0800E3E8E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C246857E1F70BD0800E3E8E4 /* main.m */; };
+		C24685881F70C23A00E3E8E4 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C24685871F70C23A00E3E8E4 /* QRCodeViewController.m */; };
+		C246858B1F70C27D00E3E8E4 /* QRCodeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C246858A1F70C27D00E3E8E4 /* QRCodeAnimationView.m */; };
+		C246858E1F70C2B800E3E8E4 /* QRCodeBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C246858D1F70C2B800E3E8E4 /* QRCodeBackgroundView.m */; };
+		C24685911F70CA6100E3E8E4 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = C24685901F70CA6100E3E8E4 /* UIViewExt.m */; };
+		C24685941F70EBF800E3E8E4 /* KNWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C24685931F70EBF800E3E8E4 /* KNWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		C246857B1F70BD0800E3E8E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C246857D1F70BD0800E3E8E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C246857E1F70BD0800E3E8E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C24685861F70C23A00E3E8E4 /* QRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		C24685871F70C23A00E3E8E4 /* QRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		C24685891F70C27D00E3E8E4 /* QRCodeAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeAnimationView.h; sourceTree = "<group>"; };
+		C246858A1F70C27D00E3E8E4 /* QRCodeAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeAnimationView.m; sourceTree = "<group>"; };
+		C246858C1F70C2B800E3E8E4 /* QRCodeBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeBackgroundView.h; sourceTree = "<group>"; };
+		C246858D1F70C2B800E3E8E4 /* QRCodeBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeBackgroundView.m; sourceTree = "<group>"; };
+		C246858F1F70CA6000E3E8E4 /* UIViewExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		C24685901F70CA6100E3E8E4 /* UIViewExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		C24685921F70EBF800E3E8E4 /* KNWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNWebViewController.h; sourceTree = "<group>"; };
+		C24685931F70EBF800E3E8E4 /* KNWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +73,13 @@
 		C246856E1F70BD0800E3E8E4 /* KNQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				C24685851F70BD8A00E3E8E4 /* QRCode */,
 				C246856F1F70BD0800E3E8E4 /* AppDelegate.h */,
 				C24685701F70BD0800E3E8E4 /* AppDelegate.m */,
 				C24685721F70BD0800E3E8E4 /* ViewController.h */,
 				C24685731F70BD0800E3E8E4 /* ViewController.m */,
+				C24685921F70EBF800E3E8E4 /* KNWebViewController.h */,
+				C24685931F70EBF800E3E8E4 /* KNWebViewController.m */,
 				C24685751F70BD0800E3E8E4 /* Main.storyboard */,
 				C24685781F70BD0800E3E8E4 /* Assets.xcassets */,
 				C246857A1F70BD0800E3E8E4 /* LaunchScreen.storyboard */,
@@ -69,6 +87,21 @@
 				C246857E1F70BD0800E3E8E4 /* main.m */,
 			);
 			path = KNQRCode;
+			sourceTree = "<group>";
+		};
+		C24685851F70BD8A00E3E8E4 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				C24685861F70C23A00E3E8E4 /* QRCodeViewController.h */,
+				C24685871F70C23A00E3E8E4 /* QRCodeViewController.m */,
+				C24685891F70C27D00E3E8E4 /* QRCodeAnimationView.h */,
+				C246858A1F70C27D00E3E8E4 /* QRCodeAnimationView.m */,
+				C246858C1F70C2B800E3E8E4 /* QRCodeBackgroundView.h */,
+				C246858D1F70C2B800E3E8E4 /* QRCodeBackgroundView.m */,
+				C246858F1F70CA6000E3E8E4 /* UIViewExt.h */,
+				C24685901F70CA6100E3E8E4 /* UIViewExt.m */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +175,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C24685911F70CA6100E3E8E4 /* UIViewExt.m in Sources */,
+				C246858E1F70C2B800E3E8E4 /* QRCodeBackgroundView.m in Sources */,
 				C24685741F70BD0800E3E8E4 /* ViewController.m in Sources */,
 				C246857F1F70BD0800E3E8E4 /* main.m in Sources */,
+				C24685881F70C23A00E3E8E4 /* QRCodeViewController.m in Sources */,
 				C24685711F70BD0800E3E8E4 /* AppDelegate.m in Sources */,
+				C24685941F70EBF800E3E8E4 /* KNWebViewController.m in Sources */,
+				C246858B1F70C27D00E3E8E4 /* QRCodeAnimationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG6Q85865M;
 				INFOPLIST_FILE = KNQRCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leessang.KNQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VG6Q85865M;
 				INFOPLIST_FILE = KNQRCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Leessang.KNQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "QRCodeViewController.h"
+
+#define kScreenWidth   [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight  [UIScreen mainScreen].bounds.size.height
 
 @interface ViewController ()
+@property(nonatomic, strong )UIButton * QRButtton;
 
 @end
 
@@ -16,14 +21,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"首页";
+    [self.view addSubview:self.QRButtton];
+    
+}
+
+-(void)QRButttonClick:(UIButton *)sender{
+ 
+    [self.navigationController pushViewController:[QRCodeViewController new] animated:YES];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(UIButton *)QRButtton{
+    if (!_QRButtton) {
+        _QRButtton = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 120, 40)];
+        [_QRButtton setBackgroundColor:[UIColor blueColor]];
+        [_QRButtton setTitle:@"扫描二维码" forState:UIControlStateNormal];
+        [_QRButtton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _QRButtton.titleLabel.font = [UIFont systemFontOfSize:13];
+        _QRButtton.layer.masksToBounds = YES;
+        _QRButtton.layer.cornerRadius = 20;
+        [_QRButtton addTarget:self action:@selector(QRButttonClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _QRButtton;
 }
-
 
 @end
