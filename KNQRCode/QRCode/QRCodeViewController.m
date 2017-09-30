@@ -98,7 +98,7 @@
     [_session addOutput:output];
     
     //设置扫码支持的编码格式
-    output.metadataObjectTypes = @[AVMetadataObjectTypeQRCode,AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeCode128Code];
+    output.metadataObjectTypes = @[AVMetadataObjectTypeUPCECode,AVMetadataObjectTypeCode39Code,AVMetadataObjectTypeCode39Mod43Code,AVMetadataObjectTypeEAN13Code,AVMetadataObjectTypeEAN8Code,AVMetadataObjectTypeCode93Code,AVMetadataObjectTypeCode128Code,AVMetadataObjectTypePDF417Code,AVMetadataObjectTypeQRCode,AVMetadataObjectTypeAztecCode,AVMetadataObjectTypeInterleaved2of5Code,AVMetadataObjectTypeITF14Code,AVMetadataObjectTypeDataMatrixCode];
     
     //创建视频预览层并将其添加到UI中
     AVCaptureVideoPreviewLayer *layer =[AVCaptureVideoPreviewLayer layerWithSession:_session];
@@ -131,6 +131,15 @@
         _IsOpen = YES;
         [self.navigationController pushViewController:LableVC animated:YES];
     }
+    else
+    {
+    //扫描失败
+    if (self.KNRCodeFailBlock) {
+        self.KNRCodeFailBlock(self);
+        }
+    }
+
+
 }
 
 

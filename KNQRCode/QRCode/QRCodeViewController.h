@@ -10,4 +10,9 @@
 
 @interface QRCodeViewController : UIViewController
 
+@property (nonatomic, copy) void (^KNRCodeCancleBlock) (QRCodeViewController *);//扫描取消
+@property (nonatomic, copy) void (^KNRCodeSuncessBlock) (QRCodeViewController *,NSString *);//扫描结果
+@property (nonatomic, copy) void (^KNRCodeFailBlock) (QRCodeViewController *);//扫描失败
+
+
 @end
