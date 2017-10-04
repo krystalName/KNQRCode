@@ -27,8 +27,16 @@
 }
 
 -(void)QRButttonClick:(UIButton *)sender{
- 
-    [self.navigationController pushViewController:[QRCodeViewController new] animated:YES];
+    QRCodeViewController *vc =  [QRCodeViewController new];
+    
+    //扫描失败的时候。调用block
+    vc.KNRCodeFailBlock = ^(QRCodeViewController * vc) {
+       //失败的处理
+      // 1.比如说弹窗
+        
+    };
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
